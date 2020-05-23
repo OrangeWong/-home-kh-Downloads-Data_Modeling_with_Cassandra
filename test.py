@@ -13,7 +13,7 @@ def connect_database():
     # connecting to the database
     cluster = Cluster(['127.0.0.1'])
     session = cluster.connect()
-    session.set_keyspace('project2')
+    session.set_keyspace('sparkify_event')
     return session
 
 
